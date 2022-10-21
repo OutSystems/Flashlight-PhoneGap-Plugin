@@ -59,12 +59,7 @@ public class Flashlight extends CordovaPlugin {
               }
             }
 
-            // android M permission
-            if (!hasPermisssion()) {
-              requestPermissions(PERMISSION_CALLBACK_CAMERA);
-            } else {
-              toggleTorch(true);
-            }
+            toggleTorch(true);
           }
         });
 
